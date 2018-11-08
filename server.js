@@ -84,7 +84,10 @@ app.get('/', (req, res) => {
       score++;
     }
     // fs.appendFile("./leader.txt", `${RollNo} ${Name} ${Q1}\n`);
-    fs.appendFile("./leaders.txt", `${new Date().toLocaleTimeString()} ${RollNo} ${Name} ${score}\n`);
+    fs.appendFile("./leaders.txt", `${new Date().toLocaleTimeString()} ${RollNo} ${Name} ${score}\n`, (err) => {
+      if (err) throw err;
+      console.log("The data was successfully appended!");
+    });
   }
 });
 
