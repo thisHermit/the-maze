@@ -59,10 +59,10 @@ app.get('/', (req, res) => {
     if (Q1 && Q1 === "liefootsteps") {
       score++;
     }
-    if (Q2 && Q2 === "thursday") {
+    if (Q2 && Q2 === "1975") {
       score++;
     }
-    if (Q3 && Q3 === "death") {
+    if (Q3 && Q3 === "1464") {
       score++;
     }
     if (Q4 && Q4 === "silence") {
