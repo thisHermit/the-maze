@@ -65,7 +65,7 @@ app.get('/', (req, res) => {
     if (Q3 && Q3 === "1464") {
       score++;
     }
-    if (Q4 && Q4 === "silence") {
+    if (Q4 && Q4 === "15") {
       score++;
     }
     if (Q5 && Q5 === "darkness") {
